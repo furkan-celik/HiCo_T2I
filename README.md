@@ -47,7 +47,14 @@ CUDA_VISIBLE_DEVICES=0
 ```
 ## BibTeX
 ```
-@misc{, 
+@misc{cheng2024hicohierarchicalcontrollablediffusion,
+      title={HiCo: Hierarchical Controllable Diffusion Model for Layout-to-image Generation}, 
+      author={Bo Cheng and Yuhang Ma and Liebucha Wu and Shanyuan Liu and Ao Ma and Xiaoyu Wu and Dawei Leng and Yuhui Yin},
+      year={2024},
+      eprint={2410.14324},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2410.14324}, 
 }
 ```
 ## License
