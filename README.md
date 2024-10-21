@@ -6,14 +6,14 @@
 
 <div align="center">
   <a href="[https://pixart-alpha.github.io/](https://github.com/360CVGroup/HiCo_T2I)"><img src="https://img.shields.io/static/v1?label=Project%20Page&message=Github&color=blue&logo=github-pages"></a> &ensp;
-  <a href="https://arxiv.org/abs/xxx"><img src="https://img.shields.io/static/v1?label=Paper&message=Arxiv:Alpha&color=red&logo=arxiv"></a> &ensp;
+  <a href="https://arxiv.org/abs/2410.14324"><img src="https://img.shields.io/static/v1?label=Paper&message=Arxiv:Alpha&color=red&logo=arxiv"></a> &ensp;
   <a href="https://github.com/xxx"><img src="https://img.shields.io/static/v1?label=App&message=ComfyUI&&color=green"></a> &ensp;
 </div>
 
 ---
 ## 🔥 News 
 - **[2024/10/21]** We initialized this github repository and released the code .
-- **[2024/10/18]** We released the paper of [HiCo](xxxxx).
+- **[2024/10/18]** We released the paper of [HiCo](https://arxiv.org/abs/2410.14324).
 
 ## 🕓 Schedules
 - **[Temporary uncertainty]** We plan to release the 2nd generation HiCo(more lightweight).
