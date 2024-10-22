@@ -19,7 +19,7 @@
 - **[Temporary uncertainty]** We plan to release the 2nd generation HiCo(more lightweight).
 
 ## 💻 Quick Demos
-Image demos can be found on the [HiCo](https://github.com/360CVGroup/HiCo_T2I). Some of them are contributed by the community. You can customize your own personalized generation using the following reasoning code.
+Image demos can be found on the [HiCo](https://360cvgroup.github.io/HiCo_T2I/). Some of them are contributed by the community. You can customize your own personalized generation using the following reasoning code.
 
 ## 🔧 Quick Start
 ### 0. Experimental environment
