@@ -5,7 +5,7 @@
 #### <div align="center"> Bo Cheng, Yuhang Ma, Liebucha Wu, Shanyuan Liu, Ao Ma, Xiaoyu Wu, Dawei Leng†, Yuhui Yin(✝Corresponding Author) <div> 
 
 <div align="center">
-  <a href="[https://360cvgroup.github.io/HiCo_T2I/]"><img src="https://img.shields.io/static/v1?label=Project%20Page&message=Github&color=blue&logo=github-pages"></a> &ensp;
+  <a href="https://360cvgroup.github.io/HiCo_T2I/"><img src="https://img.shields.io/static/v1?label=Project%20Page&message=Github&color=blue&logo=github-pages"></a> &ensp;
   <a href="https://arxiv.org/abs/2410.14324"><img src="https://img.shields.io/static/v1?label=Paper&message=Arxiv:HiCo&color=red&logo=arxiv"></a> &ensp;
   <a href="https://github.com/xxx"><img src="https://img.shields.io/static/v1?label=App&message=ComfyUI&&color=green"></a> &ensp;
 </div>
