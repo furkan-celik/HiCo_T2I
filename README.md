@@ -29,7 +29,6 @@ We tested our inference code on a machine with a 24GB 3090 GPU and CUDA environm
 ```
 git clone https://github.com/360CVGroup/HiCo_T2I.git
 cd HiCo
-
 conda create -n HiCo python=3.10
 conda activate HiCo
 pip install -r requirements.txt
@@ -37,7 +36,6 @@ pip install -r requirements.txt
 ### 2. Prepare the models
 ```
 git lfs install
-
 # HiCo checkpoint
 git clone https://huggingface.co/qihoo360/HiCo_T2I models/controlnet
 # stable-diffusion-v1-5
