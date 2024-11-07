@@ -36,10 +36,12 @@ pip install -r requirements.txt
 ```
 ### 2. Prepare the models
 ```
-# HiCo checkpoint
+git lfs install
 
+# HiCo checkpoint
+git clone https://huggingface.co/qihoo360/HiCo_T2I models/controlnet
 # stable-diffusion-v1-5
-git clone https://huggingface.co/runwayml/stable-diffusion-v1-5 resources/models
+git clone https://huggingface.co/krnl/realisticVisionV51_v51VAE /models/realisticVisionV51_v51VAE
 ```
 ### 3. Customize your own creation
 ```
