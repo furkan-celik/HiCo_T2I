@@ -32,6 +32,8 @@ cd HiCo
 conda create -n HiCo python=3.10
 conda activate HiCo
 pip install -r requirements.txt
+cd diffusers
+pip install .
 ```
 ### 2. Prepare the models
 ```
@@ -43,8 +45,13 @@ git clone https://huggingface.co/krnl/realisticVisionV51_v51VAE /models/realisti
 ```
 ### 3. Customize your own creation
 ```
-CUDA_VISIBLE_DEVICES=0 
+CUDA_VISIBLE_DEVICES=0   infer-avg.py
 ```
+## 💻 Train
+```
+accelerate launch train_hico.py
+```
+
 ## BibTeX
 ```
 @misc{cheng2024hicohierarchicalcontrollablediffusion,
