@@ -47,7 +47,31 @@ git clone https://huggingface.co/krnl/realisticVisionV51_v51VAE /models/realisti
 ```
 CUDA_VISIBLE_DEVICES=0   infer-avg.py
 ```
-## 💻 Train
+## 🔥 Train
+
+The json structure for dataset is:
+```
+dataset
+
+├──base_info 
+│  ├──id
+│  ├──width
+│  ├──height
+│  ├──f_path
+├──caption  
+├──obj_nums  
+├──img_size  
+│  ├──H
+│  ├──W
+├──path_img
+├──list_bbox_info
+│  ├──subcaption
+│  ├──coordinates(x1,y1,x2,y2)
+│  │......
+├──crop_location
+
+```
+Then you can train the code.
 ```
 accelerate launch train_hico.py
 ```
