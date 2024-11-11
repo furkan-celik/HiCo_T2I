@@ -38,8 +38,10 @@ pip install .
 ### 2. Prepare the models
 ```
 git lfs install
+
 # HiCo checkpoint
 git clone https://huggingface.co/qihoo360/HiCo_T2I models/controlnet
+
 # stable-diffusion-v1-5
 git clone https://huggingface.co/krnl/realisticVisionV51_v51VAE /models/realisticVisionV51_v51VAE
 ```
