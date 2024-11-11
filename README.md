@@ -63,7 +63,7 @@ dataset
 ├──img_size  
 │  ├──H
 │  ├──W
-├──path_img
+├──path_img (f_path)
 ├──list_bbox_info
 │  ├──subcaption
 │  ├──coordinates(x1,y1,x2,y2)
