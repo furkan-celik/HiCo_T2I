@@ -40,8 +40,6 @@ from ..pipeline_utils import DiffusionPipeline
 from ..stable_diffusion import StableDiffusionPipelineOutput
 from ..stable_diffusion.safety_checker import StableDiffusionSafetyChecker
 from .multicontrolnet import MultiControlNetModel
-import pdb
-import time
 
 logger = logging.get_logger(__name__)  # pylint: disable=invalid-name
 
