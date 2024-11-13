@@ -176,6 +176,7 @@ else:
         StableDiffusionControlNetImg2ImgPipeline,
         StableDiffusionControlNetInpaintPipeline,
         StableDiffusionControlNetPipeline,
+        StableDiffusionHicoNetLayoutPipeline,
         # StableDiffusionControlNetLayoutPipeline,
         # StableDiffusionControlNetMultiLayoutPipeline,
         StableDiffusionDepth2ImgPipeline,
