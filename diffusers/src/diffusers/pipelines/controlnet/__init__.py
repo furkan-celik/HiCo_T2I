@@ -13,6 +13,7 @@ except OptionalDependencyNotAvailable:
     from ...utils.dummy_torch_and_transformers_objects import *  # noqa F403
 else:
     from .multicontrolnet import MultiControlNetModel
+    from .pipeline_controlnet import StableDiffusionControlNetPipeline
     from .layout_encoder import LayoutTransformerEncoder
     from .pipeline_controlnet_layout import StableDiffusionControlNetLayoutPipeline
     from .pipeline_hiconet_layout import StableDiffusionHicoNetLayoutPipeline
