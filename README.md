@@ -75,7 +75,7 @@ dataset
 ```
 Then you can train the code.
 ```
-accelerate launch train_hico.py
+sh run.sh
 ```
 
 ## BibTeX
