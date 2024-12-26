@@ -113,7 +113,7 @@ class CocoSceneGraphDataset(Dataset):
         self.total_num_bbox = 0
         self.total_num_invalid_bbox = 0
 
-        #pdb.set_trace()
+       
         with open(instances_json, 'r') as f:
             instances_data = json.load(f)
 
@@ -134,7 +134,7 @@ class CocoSceneGraphDataset(Dataset):
             self.image_id_to_filename[image_id] = filename
             self.image_id_to_size[image_id] = (width, height)
 
-        #pdb.set_trace()
+        
         self.vocab = {
             'object_name_to_idx': {},
             'pred_name_to_idx': {},
@@ -148,7 +148,7 @@ class CocoSceneGraphDataset(Dataset):
             object_idx_to_name[category_id] = category_name
             self.vocab['object_name_to_idx'][category_name] = category_id
 
-        #pdb.set_trace()
+        
         all_stuff_categories = []
         if stuff_data:
             for category_data in stuff_data['categories']:
@@ -158,7 +158,7 @@ class CocoSceneGraphDataset(Dataset):
                 object_idx_to_name[category_id] = category_name
                 self.vocab['object_name_to_idx'][category_name] = category_id
 
-        #pdb.set_trace()
+        
         if instance_whitelist is None:
             instance_whitelist = all_instance_categories
         if stuff_whitelist is None:
@@ -186,7 +186,7 @@ class CocoSceneGraphDataset(Dataset):
             else:
                 raise NotImplementedError
 
-        #pdb.set_trace()
+        
         # Add object data from stuff
         if stuff_data:
             image_ids_with_stuff = set()
@@ -218,7 +218,7 @@ class CocoSceneGraphDataset(Dataset):
                     self.image_id_to_size.pop(image_id, None)
                     self.image_id_to_objects.pop(image_id, None)
 
-        #pdb.set_trace()
+        
         # COCO category labels start at 1, so use 0 for __image__
         self.vocab['object_name_to_idx']['__image__'] = 0
 
@@ -244,7 +244,7 @@ class CocoSceneGraphDataset(Dataset):
                 new_image_ids.append(image_id)
         self.image_ids = new_image_ids
 
-        #pdb.set_trace()
+        
         self.use_deprecated_stuff2017 = False
         if self.use_deprecated_stuff2017:
             deprecated_image_ids = []
@@ -261,8 +261,8 @@ class CocoSceneGraphDataset(Dataset):
                     new_image_ids.append(image_id)
             self.image_ids = new_image_ids
 
-        #pdb.set_trace()     # image_ids : 118280
-        # get 2048 test dataset
+        
+        
         if self.filter_mode == 'SG2Im':
             if self.mode == 'val':
                 self.image_ids = self.image_ids[:1024]
@@ -280,7 +280,7 @@ class CocoSceneGraphDataset(Dataset):
                     print('image id: {} is not found in all image id list')
             self.image_ids = new_image_ids
 
-        #pdb.set_trace()     # image_ids : 25210
+        
         elif self.max_num_samples:
             self.image_ids = self.image_ids[:self.max_num_samples]
 
