@@ -540,6 +540,11 @@ def parse_args(input_args=None):
         help="Number of images to be generated for each `--validation_image`, `--validation_prompt` pair",
     )
     parser.add_argument(
+        "--train_data_yaml",
+        type=str,
+        default="latent_LayoutDiffusion_large_demo.yaml",
+    )
+    parser.add_argument(
         "--validation_steps",
         type=int,
         default=100,
@@ -990,10 +995,8 @@ def main(args):
     )
 
 
-
-
-
-    cfg_data = OmegaConf.load("utils/dataset/latent_LayoutDiffusion_large_coco.yaml")
+    #cfg_data = OmegaConf.load("utils/dataset/latent_LayoutDiffusion_large_coco.yaml")
+    cfg_data = OmegaConf.load(args.train_data_yaml)
     train_dataset = make_train_dataset_coco(cfg_data, 'train', accelerator)
 
     train_dataloader = DataLoaderUpd(

@@ -65,7 +65,8 @@ data:
     mask_size_for_layout_object: 32
     loader_num_workers: 16
     include_relationships: False
-    root_dir: '' # your own coco path
+    #root_dir: '/home/jovyan/aigc/LayoutProj/LayoutDiffusion/datasets/coco' # your own coco path
+    root_dir: './coco' # your own coco path
     instance_whitelist: null
     stuff_whitelist: null
     include_other: False
@@ -78,4 +79,14 @@ data:
     coco_train_json: ''
     coco_val_json: ''
 
-
+    train:
+      image_dir: 'images/train2017'
+      instances_json: 'annotations/instances_train2017.json'
+      stuff_json: ''
+      deprecated_stuff_ids_txt: ''
+      max_num_samples: null
+      specific_image_ids: [ ] 
+      shuffle: True
+      batch_size: 16           # 2 GPUs, total_batch_size=2x16=32;     need 22GB memory per GPU
+      left_right_flip: True
+      use_MinIoURandomCrop: True
