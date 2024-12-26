@@ -995,7 +995,6 @@ def main(args):
     )
 
 
-    #cfg_data = OmegaConf.load("utils/dataset/latent_LayoutDiffusion_large_coco.yaml")
     cfg_data = OmegaConf.load(args.train_data_yaml)
     train_dataset = make_train_dataset_coco(cfg_data, 'train', accelerator)
 
