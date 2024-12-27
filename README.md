@@ -51,9 +51,9 @@ CUDA_VISIBLE_DEVICES=0   infer-avg.py
 ```
 ## 🔥 Train
 
-The json structure for dataset is:
+The json structure for dataset is: (like GRIT)
 ```
-dataset
+dataset 
 
 ├──base_info 
 │  ├──id
