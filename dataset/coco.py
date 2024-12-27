@@ -440,6 +440,7 @@ class CocoSceneGraphDataset(Dataset):
         meta_data['obj_class'][1:1 + num_selected] = obj_class[selected_obj_idxs]
         meta_data['is_valid_obj'][1:1 + num_selected] = 1.0
         meta_data['num_selected'] = num_selected
+        meta_data['obj_class_text_ids'] = num_selected + 1
         meta_data['obj_class_name'] = [self.vocab['object_idx_to_name'][int(class_id)] for class_id in meta_data['obj_class']]
 
         if self.return_origin_image:
