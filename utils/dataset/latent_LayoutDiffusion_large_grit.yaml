@@ -75,8 +75,8 @@ data:
     stuff_only: True
     used_condition_types: [ 'obj_class','obj_bbox' ]
     return_origin_image: False
-    #grit_json: '/home/jovyan/boomcheng-data/aigc/LayoutProj/GRIT/grit-20m-512-obj3-demo.json'
-    grit_json: '/home/jovyan/boomcheng-data/aigc/LayoutProj/GRIT/grit-20m-512-obj3-all-124w.json'
+    #grit_json: 'grit-20m-512-obj3-demo.json' you own grit_json path 
+    grit_json: ''
 
     train:
       image_dir: 'images/train2017'
