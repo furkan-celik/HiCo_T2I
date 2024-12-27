@@ -6,7 +6,7 @@ CUDA_VISIBLE_DEVICES=0 \
 /home/jovyan/miniconda3_hico/bin/accelerate launch --config_file ./utils/accelerate_config.yaml train_hico.py \
     --pretrained_model_name_or_path=$MODEL_DIR \
     --output_dir=$OUTPUT_DIR \
-    --train_data_yaml="utils/dataset/latent_LayoutDiffusion_large_coco.yaml" \
+    --train_data_yaml="utils/dataset/latent_LayoutDiffusion_large_grit.yaml" \
     --dataset_name=coco \
     --mixed_precision="fp16" \
     --resolution=512 \
