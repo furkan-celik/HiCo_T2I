@@ -42,6 +42,7 @@ from transformers import AutoTokenizer, PretrainedConfig
 from omegaconf import OmegaConf
 from dataset.coco import build_coco_dsets
 from dataset.grit import build_grit_dsets
+from dataset.wui import build_wui_dsets
 
 import importlib
 from collections import defaultdict
@@ -1003,7 +1004,8 @@ def main(args):
 
     cfg_data = OmegaConf.load(args.train_data_yaml)
     #train_dataset = make_train_dataset_coco(cfg_data, 'train', accelerator) 
-    train_dataset = make_train_dataset_grit(cfg_data, 'train', accelerator, tokenizer)
+    # train_dataset = make_train_dataset_grit(cfg_data, 'train', accelerator, tokenizer)
+    train_dataset = make_train_dataset_wui(cfg_data, 'train', accelerator, tokenizer)
 
     train_dataloader = DataLoaderUpd(
         train_dataset,
